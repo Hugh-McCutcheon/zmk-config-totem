@@ -86,7 +86,7 @@
             bindings = <
             &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y    &kp U              &kp I        &kp O            &kp P
             &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RCTRL E  &mt RIGHT_ALT L  &mt RGUI SEMI
-&caps_word  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M              &kp COMMA    &kp DOT          &kp FSLH       &kp BSLH
+&caps_word  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M              &kp COMMA    &kp DOT          &kp FSLH       &lt 2 DLLR
                                             &kp DEL      &lt 1 TAB         &kp SPACE    &kp RET  &lt 0 ESC          &kp BSPC
             >;
         };
@@ -113,7 +113,16 @@
         &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7  &kp N8  &kp N9  &kp EQUAL
         &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp N4  &kp N5  &kp N6  &kp MINUS
 &trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY  &trans
-                               &trans    &trans     &trans      &mo 0     &kp N0  &trans
+                               &trans    &trans     &trans      &mo 0     &trans  &trans
+            >;
+        };
+
+        Mouse {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
