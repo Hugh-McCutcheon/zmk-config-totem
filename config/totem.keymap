@@ -86,7 +86,7 @@
 
             bindings = <
             &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y    &kp U              &kp I        &kp O            &kp P
-            &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RCTRL E  &mt RIGHT_ALT L  &mt RGUI SEMI
+            &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SEMI
 &caps_word  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M              &kp COMMA    &kp DOT          &kp FSLH       &lt 2 DLLR
                                             &kp DEL      &lt 1 TAB         &kp SPACE    &kp RET  &lt 0 ESC          &kp BSPC
             >;
