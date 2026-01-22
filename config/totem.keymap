@@ -87,7 +87,7 @@
             bindings = <
             &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y    &kp U              &kp I        &kp O            &kp P
             &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SEMI
-&caps_word  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M              &kp COMMA    &kp DOT          &kp FSLH       &lt 2 DLLR
+&caps_word  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M              &kp COMMA    &kp DOT          &kp FSLH       &sl 2
                                             &kp DEL      &lt 1 TAB         &kp SPACE    &kp RET  &lt 0 ESC          &kp BSPC
             >;
         };
@@ -113,17 +113,17 @@
             bindings = <
         &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7  &kp N8  &kp N9  &kp EQUAL
         &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp N4  &kp N5  &kp N6  &kp MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY  &trans
+&trans  &kp DEL    &kp PG_UP   &trans    &kp PG_DN  &kp LPAR    &kp RPAR  &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY  &trans
                                &trans    &trans     &trans      &mo 0     &trans  &trans
             >;
         };
 
         Mouse {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans          &trans        &trans          &trans           &trans
-        &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans        &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans          &trans        &trans
+        &trans  &mkp MB4        &msc SCRL_UP    &mkp MB5         &trans    &trans             &trans             &trans            &trans             &trans
+        &trans  &mkp RCLK       &mkp MCLK       &mkp LCLK        &trans    &mmv MOVE_LEFT     &mmv MOVE_DOWN     &mmv MOVE_UP      &mmv MOVE_RIGHT    &trans
+&trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &mmv MOVE_X(-600)  &mmv MOVE_Y(-600)  &mmv MOVE_Y(600)  &mmv MOVE_X(-600)  &trans  &sl 0
+                                &trans          &trans           &trans    &trans             &trans             &trans
             >;
         };
 
