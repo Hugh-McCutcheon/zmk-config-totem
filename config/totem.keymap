@@ -61,6 +61,13 @@
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
         };
+
+        emailCorrections: emailCorrections {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT) &kp BACKSPACE &kp PERIOD &kp LC(RIGHT) &kp AT &kp C &kp O &kp R &kp R &kp E &kp C &kp T &kp I &kp O &kp N &kp S &kp DOT &kp G &kp O &kp V &kp T &kp DOT &kp N &kp Z>;
+            label = "EMAILCORRECTIONS";
+        };
     };
 
     keymap {
@@ -85,10 +92,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y    &kp U              &kp I        &kp O            &kp P
-            &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SEMI
-&caps_word  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M              &kp COMMA    &kp DOT          &kp FSLH       &to 2
-                                            &kp DEL      &lt 1 TAB         &kp SPACE    &kp RET  &lt 0 ESC          &kp BSPC
+                   &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y    &kp U              &kp I        &kp O            &kp P
+                   &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SEMI
+&emailCorrections  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M              &kp COMMA    &kp DOT          &kp FSLH       &to 2
+                                                   &kp DEL      &lt 1 TAB         &kp SPACE    &kp RET  &lt 0 ESC          &kp BSPC
             >;
         };
 
